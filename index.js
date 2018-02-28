@@ -24,8 +24,8 @@ const monokaiColors = {
     grayscale: foregroundColor
 };
 
-const tabBasicBorder  = '#49483E';
-const tabActiveBorder  = 'rgba(0, 181, 181, 1)';
+const tabBasicBorder = '#49483E';
+const tabActiveBorder = 'rgba(0, 181, 181, 1)';
 const borderColor = monokaiColors.lightBlack;
 
 const colors = {
@@ -57,8 +57,8 @@ exports.decorateConfig = config => {
     return Object.assign({}, config, {
         backgroundColor: backgroundColor,
         foregroundColor: foregroundColor,
-        cursorColor:  colors.cyan || config.cursorColor,
-        cursorShape: config.cursorShape || "BEAM",
+        cursorColor: colors.cyan || config.cursorColor,
+        cursorShape: config.cursorShape || 'BEAM',
         colors,
         termCSS: `
             ${config.termCSS || ''}
